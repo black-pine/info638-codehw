@@ -2,7 +2,7 @@
 <html>
 
 	<!-- codehw1 with only the challenge solutions PHP and basic HTML
-	codehw1js.php contains the same PHP with additional CSS and Javascript -->
+	codehw1js.php contains the same PHP with additional CSS and Javascript as it appears on the live server -->
 
 	<head> <meta charset='utf-8' /> </head>
 
