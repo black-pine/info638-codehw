@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-	<!-- codehw1.php with only the challenge solutions PHP and basic HTML (the PHP is the same as appears on the live server) -->
+	<!-- codehw1 with only the challenge solutions PHP and basic HTML
+	codehw1js.php contains the same PHP with additional CSS and Javascript -->
 
-	<head>
-		<meta charset='utf-8' />
-	</head>
+	<head> <meta charset='utf-8' /> </head>
 
 	<body>
 		<div>
