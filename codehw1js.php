@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-	<!-- codehw1.php with only the challenge solutions PHP and basic HTML (the PHP is the same as appears on the live server) -->
+	
+	<!-- codehw1.php as it appears on the live server with additional CSS & Javascript to enhance the appearance and viewing experience -->
 
 	<head>
 		<meta charset='utf-8' />
 	</head>
 
 	<body>
-		<div>
-		<h1>Challenge 1: Correct Change</h1>
+		<!-- navigation for viewing one challenge at a time -->
+		<nav>
+			<ul>
+				<li><a href='javascript:dispClk("change")'>Challenge 1</a></li>
+				<li><a href='javascript:dispClk("beer")'>Challenge 2</a></li>
+			</ul>
+		</nav>
+
+
+		<div id='change'>
+		<h2>Challenge 1</h2>
+		<h1>Correct Change</h1>
 		<?php
 			// calculate amount of each denomination
 			$cents = $change = 159; // set the change value
@@ -36,8 +46,9 @@
 		</div>
 
 
-		<div>
-		<h1>Challenge 2: 99 Bottles of Beer</h1>
+		<div id='beer' hidden>
+		<h2>Challenge 2</h2>
+		<h1>99 Bottles of Beer</h1>
 		<?php
 			$count = 4; // set the number of bottles to start with
 
@@ -59,3 +70,43 @@
 		</div>
 	</body>
 </html>
+
+
+<!-- optional formatting to isolate challenges -->
+<script type='text/javascript'>
+	// show or hide certain <div> elements on the page by id
+	function dispClk(idtxt) {
+		var challenges = document.getElementsByTagName("div");
+		for (var i = 0; i < challenges.length; i++) { challenges[i].setAttribute("hidden", ""); }
+		document.getElementById(idtxt).removeAttribute("hidden");
+		return;
+	}
+</script>
+<style>
+	body { text-align: center; }
+	nav ul {
+		list-style-type: none;
+		padding: 10px;
+		background-color: #A695C7;
+	}
+	nav ul li {
+		display: inline-block;
+		margin: 0px 40px;
+		font-size: 20px;
+	}
+	nav ul li a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	nav ul li a:hover {
+		text-decoration: underline;
+	}
+	h1 {
+		margin-top: 0px;
+		color: #A695C7;
+	}
+	h2 {
+		margin-bottom: 0px;
+		color: #444444;
+	}
+</style>
