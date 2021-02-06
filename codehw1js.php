@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 	
-	<!-- codehw1.php as it appears on the live server with additional CSS & Javascript to enhance the appearance and viewing experience -->
+	<!-- codehw1 as it appears on the live server with additional CSS & Javascript to enhance the appearance and viewing experience
+	codehw1.php contains the same PHP, but stripped down front end code -->
 
-	<head>
-		<meta charset='utf-8' />
-	</head>
+	<head> <meta charset='utf-8' /> </head>
 
 	<body>
 		<!-- navigation for viewing one challenge at a time -->
