@@ -40,7 +40,7 @@
 			$cents == 1 ? $cents .= ' cent' : $cents .= ' cents';
 			
 			// final output
-			echo "<p>You are due $change back in change total.<p/><p>You are due back $dollar, $quarter, $dime, $nickel, and $cents.</p>";
+			echo "<p>You are due $change back in change total.</p><p>You are due back $dollar, $quarter, $dime, $nickel, and $cents.</p>";
 		?>
 		</div>
 
