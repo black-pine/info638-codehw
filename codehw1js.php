@@ -60,9 +60,9 @@
 					print "<p>$count bottle of beer on the wall, $count bottle of beer!<br/>";
 				}
 				if (--$count != 1) {
-					print "Take one down, pass it around, $count bottles of beer on the wall!<p/>";
+					print "Take one down, pass it around, $count bottles of beer on the wall!</p>";
 				} else {
-					print "Take one down, pass it around, $count bottle of beer on the wall!<p/>";
+					print "Take one down, pass it around, $count bottle of beer on the wall!</p>";
 				}
 			}
 		?>
