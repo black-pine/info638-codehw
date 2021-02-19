@@ -40,7 +40,7 @@
 					echo '<tr>';
 						// Loop through each piece of information about a book
 						foreach ($book as $key => $info) {
-							if ($key == 'price') { echo "<td>\$$info</td>"; }
+							if ($key == 'price') { echo "<td>\$$info</td>"; } // Add '$' for prices
 							else { echo "<td>$info</td>"; }
 						}
 					echo '</tr>';
@@ -68,16 +68,15 @@
 
 
 			// Function to simulate coin toss & print heads/tails image until desired # of consectutive heads
-			// RETURN the total number of times the coin was tossed
+			// RETURN the total number of times the coin was tossed (or 0 if input <= 0)
 			function coinToss($consecHeads) {
-				/* absolute image filepaths
-				$heads = 'http://clipart-library.com/data_images/338909.jpg';
-				$tails = 'http://clipart-library.com/image_gallery/225541.png';
-				*/
+				// Return 0 if non-positive number of consecutive heads requested
+				if($consecHeads <= 0) { return 0; }
+
 				$heads = '../img/heads.jpg';
 				$tails = '../img/tails.png';
-				$headCt = 0;
-				$coinCt = 0;
+				$headCt = 0; // Count of consecutive heads
+				$coinCt = 0; // RETURN value of total tosses
 
 				do {
 					if(mt_rand(0,1)) {
